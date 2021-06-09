@@ -1,0 +1,15 @@
+program P_pelanggan;
+
+uses
+  Forms,
+  tarif in 'tagihan.pas' {F_Tarif},
+  EntryTarif in 'EntryTagihan.pas' {F_EntryTarif};
+
+{$R P_tagihan.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TF_Tarif, F_Tarif);
+  Application.CreateForm(TF_EntryTarif, F_EntryTarif);
+  Application.Run;
+end.

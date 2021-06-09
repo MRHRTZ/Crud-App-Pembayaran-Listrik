@@ -1,0 +1,1 @@
+title Aplikasi Pembayaran && cls && type db\ascii.txt && color F2 && cd Menu && P_menu.exe

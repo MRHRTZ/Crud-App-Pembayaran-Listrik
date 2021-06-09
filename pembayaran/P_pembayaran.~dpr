@@ -1,0 +1,16 @@
+program P_pelanggan;
+
+uses
+  Forms,
+  pembayaran in 'pembayaran.pas' {F_Pembayaran},
+  EntryPembayaran in 'EntryPembayaran.pas' {F_EntryPembayaran},
+  menu in '../menu.pas' {F_menu};
+
+{$R P_pembayaran.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TF_Pembayaran, F_Pembayaran);
+  Application.CreateForm(TF_EntryPembayaran, F_EntryPembayaran);
+  Application.Run;
+end.
